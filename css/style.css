@@ -538,7 +538,7 @@ ul.email li i {
 }
 
 .class_box p {
-     color: #000000;
+     color: #ffffff;
      font-size: 16px;
      line-height: 28px;
      transition: ease-in all 0.5s;
@@ -564,10 +564,10 @@ ul.email li i {
      background-position: center center;
      background-repeat: no-repeat;
      background-attachment: fixed;
-     padding-top: 90px;
+
 }
 
-.about .titlepage {
+/* .about .titlepage {
      padding-bottom: 0;
      max-width: 554px;
      float: right;
@@ -603,9 +603,41 @@ ul.email li i {
 .about .read_more:hover {
      color: #A3B4D6;
      background: #A3B4D6;
-}
+} */
 
+.about {
+     background-color: #ffffff; /* Add your desired background color */
+     padding: 50px; /* Adjust padding as needed */
+ }
 
+ .about .titlepage {
+     text-align: right;
+      /* Align the heading to the right */
+ }
+
+ .about h1 {
+     font-size: 50px; /* Adjust the font size as needed */
+     margin-bottom: 20px;
+     color: whitesmoke;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .about .text-container {
+     text-align: justify; 
+     position: relative;
+     left: 850px;
+     color: white;
+
+ }
+
+ .about .row.d_flex {
+     display: flex;
+     justify-content: space-around; 
+ }
+
+ .about .col-md-6 {
+     width: 48%; /* Adjust width for better alignment */
+ }
 /** end about section **/
 
 
@@ -620,7 +652,7 @@ ul.email li i {
      padding-top: 15px !important;
      line-height: 30px;
      font-size: 17px;
-     color: #262626;
+     color: #ffffff;
 }
 
 .skating-box figure {
@@ -642,55 +674,19 @@ ul.email li i {
 
 /** shop section **/
 
-.shop {
-     background: #fff;
-}
-
-.shop .titlepage {
-     padding-bottom: 0;
-     max-width: 458px;
-     float: left;
-}
-
-.shop .titlepage h2 {
-     padding-bottom: 30px;
-     color: #2d2c2c;
-}
-
-.shop .titlepage p {
-     font-weight: 400;
-     font-size: 17px;
-     line-height: 30px;
-     color: #282828;
-     padding-bottom: 29px;
-}
-
-.shop_img {
-     padding-left: 40px;
-}
-
-.shop_img figure {
-     margin: 0;
-}
-
-.shop .titlepage .read_more::before {
-     left: 89px;
-}
-
-
 /** end shop section **/
 
 
 /** testimonial **/
 
 .testimonial {
-     background: #A3B4D6;
+     background: #ffffff;
      padding: 90px 0;
-     margin-top: 90px;
+     margin-top: 50px;
 }
 
 .testimonial .titlepage h2 {
-     color: #fff;
+     color: #000000;
 }
 
 .carousel-indicators {
@@ -1048,50 +1044,50 @@ ul.social_icon li a:hover {
      width: 100%;
      height: 50px;
      background: #fff;
-     color: #501f14;
+     color: #000000;
      font-size: 17px;
      font-weight: normal;
      border-radius: 11px;
      border: inherit;
-     box-shadow: 0px 0px 2px 0 #f34b52d4;
+     box-shadow: 0px 0px 2px 0 #A3B4D6;
 }
 
 .custom-select {
      padding: 0px 10px;
-     color: #501f14;
+     color: #000000;
      font-size: 17px;
      height: 50px;
      border: inherit;
-     box-shadow: 0px 0px 2px 0 #f34b52d4;
+     box-shadow: 0px 0px 2px 0 #A3B4D6;
      margin-bottom: 20px;
      border-radius: 11px;
 }
 
 .custom-select:focus {
      border: inherit;
-     box-shadow: 0px 0px 2px 0 #f34b52d4;
+     box-shadow: 0px 0px 2px 0 #A3B4D6;
 }
 
 .main_form .textarea {
      margin-bottom: 20px;
      width: 100%;
      background: #fff;
-     color: #501f14;
+     color: #000000;
      font-size: 17px;
      font-weight: normal;
      padding: 12px 15px 10px 15px;
      height: 155px;
      border-radius: 11px;
      border: inherit;
-     box-shadow: 0px 0px 2px 0#f34b52d4;
+     box-shadow: 0px 0px 2px 0#A3B4D6;
 }
 
 .main_form .send_btn {
      font-size: 18px;
      transition: ease-in all 0.5s;
-     background-color: #f0390f;
+     background-color: #A3B4D6;
      text-transform: uppercase;
-     color: #fff;
+     color: #000000;
      max-width: 193px;
      width: 100%;
      display: block;
@@ -1109,7 +1105,7 @@ ul.social_icon li a:hover {
 }
 
 #request *::placeholder {
-     color: #501f14;
+     color: #A3B4D6;
      opacity: 1;
 }
 
