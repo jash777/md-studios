@@ -196,7 +196,7 @@ File Name: responsive.css
     .navigation.navbar-dark .navbar-toggler-icon {
         background: url(../images/menu_icon.png);
         background-repeat: no-repeat;
-        width: 48px;
+        width: 200px;
         float: right;
     }
     .d_none {
