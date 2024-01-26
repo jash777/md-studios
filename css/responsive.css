@@ -56,7 +56,7 @@ File Name: responsive.css
     .relative h3 {
         padding-bottom: 25px;
         padding-top: 29px;
-        font-size: 61px;
+        font-size: 91px;
         line-height: 75px;
     }
     #carouselExampleIndicators .carousel-control-prev {
@@ -106,7 +106,7 @@ File Name: responsive.css
 @media (min-width: 576px) and (max-width: 767px) {
     .header {
         padding: 31px 15px;
-        box-shadow: 0 0 10px rgb(240, 57, 15);
+        box-shadow: 0 0 10px #000000(240, 57, 15);
         margin-bottom: 11px;
     }
     .board {
@@ -171,6 +171,7 @@ File Name: responsive.css
         display: inherit !important;
         padding: 0;
         width: 100%;
+        
     }
     .navigation .navbar-collapse {
         background: #2b2b2b;
@@ -179,6 +180,8 @@ File Name: responsive.css
         position: absolute;
         width: 100%;
         z-index: 999;
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Added border with slight transparency */
+
     }
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 10px 0;
@@ -207,7 +210,7 @@ File Name: responsive.css
 @media (max-width: 575px) {
     .header {
         padding: 27px 5px;
-        box-shadow: 0 0 10px rgb(240, 57, 15);
+        box-shadow: 0 0 10px #000000(240, 57, 15);
         margin-bottom: 11px;
     }
     .board {
@@ -217,9 +220,15 @@ File Name: responsive.css
         padding-top: 24%;
     }
     .relative h3 {
-        line-height: 80px;
-        font-size: 60px;
+        line-height: 70px;
+        font-size: 50px;
+        margin-left: 1%;
+
     }
+    .link_btn  a {
+        margin-left: 1%;
+    } 
+ 
     .banner_img {
         padding-right: 0px;
         margin-top: 20px;
@@ -266,11 +275,10 @@ File Name: responsive.css
         padding-left: 0px;
     }
     .testimonial .titlepage {
-        padding-bottom: [0;
-        ]
+        padding-bottom: 10%;
     }
     .testimonial {
-        padding: 90px 0 10px 0;
+        padding: 50px 0 10px 0;
     }
     .test_box,
     .white_bg {
@@ -313,16 +321,20 @@ File Name: responsive.css
         margin-top: -40px;
     }
     .navigation .navbar-collapse {
-        background: #2b2b2b;
-        padding: 20px;
-        margin-top: 65px;
-        position: absolute;
-        width: 100%;
+        background: #A3B4D6;/* Light blue with some transparency */
+        padding: 10px;
+        margin-top: 32px;
+        position: relative;
+        left: 75%;
+        transform: translateX(-50%); /* Centering using transform */
+        width: 55%; /* Adjust width as needed */
+        max-width: 400px; /* Set a max-width if desired */
         z-index: 999;
+        border-radius: 10%;
     }
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 10px 0;
-        color: #fff;
+        color: #ffffff;
         text-align: center;
     }
     .navigation.navbar-dark .navbar-toggler {
@@ -333,7 +345,7 @@ File Name: responsive.css
         outline: inherit;
     }
     .navigation.navbar-dark .navbar-toggler-icon {
-        background: url(../images/menu_icon.png);
+        background: url(../images/menu_24.png);
         background-repeat: no-repeat;
         width: 48px;
     }
