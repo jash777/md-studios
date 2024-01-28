@@ -183,6 +183,7 @@ File Name: responsive.css
         border: 1px solid rgba(255, 255, 255, 0.2); /* Added border with slight transparency */
 
     }
+    
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 10px 0;
         color: #fff;
@@ -197,7 +198,7 @@ File Name: responsive.css
         margin-top: -37px;
     }
     .navigation.navbar-dark .navbar-toggler-icon {
-        background: url(../images/menu_icon.png);
+        background: url(../images/open-menu_10336994.png);
         background-repeat: no-repeat;
         width: 200px;
         float: right;
@@ -240,7 +241,7 @@ File Name: responsive.css
         left: 23%;
     }
     .carousel-inner {
-        padding-top: 80px;
+        padding-top: 5px;
     }
     .logo {
         float: left;

@@ -24,14 +24,15 @@
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <script script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      
-   
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
    </head>
+
    <!-- body -->
    <body class="main-layout">
       <!-- loader  -->
       <!-- end loader -->
       <!-- header -->
+
       <div class="header">
          <div class="container-fluid">
             <div class="row d_flex">
@@ -57,9 +58,17 @@
                            <li class="nav-item">
                               <a class="nav-link" href="about.html">About</a>
                            </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="Products.html">Products</a>
-                           </li>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Services
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                               <a class="dropdown-item" href="./fintech.html">Financial Services</a>
+                               <a class="dropdown-item" href="./cyber_security.html">Cyber Security</a>
+                               <a class="dropdown-item" href="./dev.html">Web Development</a>
+                           </div>
+                       </li>
                            <li class="nav-item">
                               <a class="nav-link" href="team.html">Team</a>
                            </li>
@@ -96,10 +105,12 @@
                                     <div  class="col-md-5">
                                        <div class="board">
                                           <div class="link_btn">
-                                             <a class="read_more" href="Javascript:void(0)">We make Digital (and Magical).<span></span></a>
+                                             <a class="read_more" href="Javascript:void(0)">
+                                                <a><span class="first-letter">W</span></a>
+                                            e make Digital (and Magical).<span></span></a>
                                           </div>
                                           <h3>
-                                             Branding<br> Products<br> Experiences
+                                             Branding.<br> Products.<br> Experiences.
                                           </h3>
                                           <div class="link_btn">
                                              <a class="read_moreq" href="/about.html">Read More   <span></span></a>
@@ -121,10 +132,12 @@
                                     <div  class="col-md-5">
                                        <div class="board">
                                           <div class="link_btn">
-                                             <a class="read_more" href="Javascript:void(0)">We make Digital (and Magical).<span></span></a>
+                                             <a class="read_more" href="Javascript:void(0)">
+                                                <a><span class="first-letter">W</span></a>
+                                            e make Digital (and Magical).<span></span></a>
                                           </div>
                                           <h3>
-                                             Branding<br> Products<br> Experiences
+                                             Branding.<br> Products.<br> Experiences.
                                           </h3>
                                           <div class="link_btn">
                                              <a class="read_moreq" href="/about.html">Read More   <span></span></a>
@@ -147,12 +160,14 @@
                                        <div class="board">
                                           <br>
                                           <div class="link_btn">
-                                             <a class="read_more" href="Javascript:void(0)"> We make Digital (and Magical).<span></span></a>
+                                             <a class="read_more" href="Javascript:void(0)">
+                                                <a><span class="first-letter">W</span></a>
+                                            e make Digital (and Magical).<span></span></a>
                                           </div>
                                           <h3>
-                                             Branding<br> Products<br> Experiences
+                                             Branding.<br> Products.<br> Experiences.
                                           </h3>
-                                          <div class="link_btnq">
+                                          <div class="link_btn">
                                              <a class="read_moreq" href="/about.html">Read More   <span></span></a>
                                           </div>
                                        </div>
@@ -188,31 +203,31 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage text_align_center">
-                     <h2>Products</h2>
+                     <h2>Services</h2>
                      <p></p>
                   </div>
                </div>
             </div>
             <div class="row">
                <div class="col-md-4 margi_bottom">
-                  <div class="class_box text_align_center">
-                     <i><img src="images/fin_icon3.png" alt="#"/></i>
+                  <div class="class_box text_align_center" onclick="redirectToAnotherPage(this,'fintech.html')">
+                     <i><img src="images/white.png" alt="#"/></i>
                      <h3>FinTech</h3>
                      <p>Transform your financial services with cutting-edge fintech applications. Our expert development team leverages the latest technologies to create innovative and secure solutions, ensuring seamless transactions and enhanced user experiences.
                      </p>
                   </div>
                </div>
-               <div class="col-md-4 margi_bottom">
-                  <div class="class_box blue text_align_center">
-                     <i><img src="images/app-development_2335265 (2).png" alt="#"/></i>
+               <div class="col-md-4 margi_bottom" >
+                  <div class="class_box blue text_align_center" onclick="redirectToAnotherPage(this,'dev.html')">
+                     <i><img src="images/dev white.png" alt="#"/></i>
                      <h3>Web Development</h3>
                      <p>Elevate your online presence with our bespoke web development services. From responsive and user-friendly websites to complex web applications, we specialize in crafting digital solutions tailored to meet your unique business needs.
                      </p>
                   </div>
                </div>
-               <div class="col-md-4 margi_bottom">
-                  <div class="class_box text_align_center">
-                     <i><img src="images/digital-marketing_4838148 (1).png" alt="#"/></i>
+               <div class="col-md-4 margi_bottom"  > 
+                  <div class="class_box text_align_center" onclick="redirectToAnotherPage(this , 'cyber_security.html')">
+                     <i><img src="images/fin_white.png" alt="#"/></i>
                      <h3>Cyber Security</h3>
                      <p>At MD Studios, we excel in Cyber Security with a focus on Zero Trust measures. Our specialized solutions fortify organizations against evolving threats, ensuring robust protection for digital assets. Trust us to secure your business with cutting-edge strategies.</p>
                   </div>
@@ -252,7 +267,7 @@
             <div class="row">
                <div class="col-sm-12">
                   <div class="titlepage text_align_center">
-                     <h2>Team</h2>
+                     <h2>Testimonial</h2>
                   </div>
                </div>
             </div>
@@ -273,7 +288,7 @@
                                     <div class="col-md-3">
                                        <div class="test_box text_align_center">
                                           <span><img src="images/test1.png" alt="#"/></span>
-                                          <h4>Dinesh M</h4>
+                                          <h4>John</h4>
                                           <img class="img_responsive" src="images/te.png" alt="#"/>
                                           <p>humour, or randomised words which don't look even slightly believable. If you are</p>
                                        </div>
@@ -281,7 +296,7 @@
                                     <div class="col-md-6">
                                        <div class="test_box white_bg text_align_center">
                                           <span><img src="images/test2.png" alt="#"/></span>
-                                          <h4>Rajesh M</h4>
+                                          <h4>Vicky</h4>
                                           <img class="img_responsive" src="images/te2.png" alt="#"/>
                                           <p>humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure</p>
                                        </div>
@@ -289,7 +304,7 @@
                                     <div class="col-md-3">
                                        <div class="test_box text_align_center">
                                           <span><img src="images/test3.png" alt="#"/></span>
-                                          <h4>Jashuva P</h4>
+                                          <h4>Raj</h4>
                                           <img class="img_responsive" src="images/te.png" alt="#"/>
                                           <p>humour, or randomised words which don't look even slightly believable. If you are</p>
                                        </div>
@@ -305,7 +320,7 @@
                                     <div class="col-md-3">
                                        <div class="test_box text_align_center">
                                           <span><img src="images/test2.png" alt="#"/></span>
-                                          <h4>Dinesh M</h4>
+                                          <h4>Ram</h4>
                                           <img class="img_responsive" src="images/te.png" alt="#"/>
                                           <p>humour, or randomised words which don't look even slightly believable. If you are</p>
                                        </div>
@@ -313,7 +328,7 @@
                                     <div class="col-md-6">
                                        <div class="test_box white_bg text_align_center">
                                           <span><img src="images/test3.png" alt="#"/></span>
-                                          <h4>Rajesh M</h4>
+                                          <h4>John</h4>
                                           <img class="img_responsive" src="images/te2.png" alt="#"/>
                                           <p> humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure</p>
                                        </div>
@@ -321,7 +336,7 @@
                                     <div class="col-md-3">
                                        <div class="test_box text_align_center">
                                           <span><img src="images/test1.png" alt="#"/></span>
-                                          <h4>Jashuva P</h4>
+                                          <h4>Emily</h4>
                                           <img class="img_responsive" src="images/te.png" alt="#"/>
                                           <p>humour, or randomised words which don't look even slightly believable. If you are</p>
                                        </div>
@@ -337,7 +352,7 @@
                                     <div class="col-md-3">
                                        <div class="test_box text_align_center">
                                           <span><img src="images/test3.png" alt="#"/></span>
-                                          <h4>Dinesh M</h4>
+                                          <h4>Keerthi</h4>
                                           <img class="img_responsive" src="images/te.png" alt="#"/>
                                           <p>humour, or randomised words which don't look even slightly believable. If you are</p>
                                        </div>
@@ -345,7 +360,7 @@
                                     <div class="col-md-6">
                                        <div class="test_box  white_bg text_align_center">
                                           <span><img src="images/test1.png" alt="#"/></span>
-                                          <h4>Jashuva P</h4>
+                                          <h4>Rachel </h4>
                                           <img class="img_responsive" src="images/te2.png" alt="#"/>
                                           <p> humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure</p>
                                        </div>
@@ -353,7 +368,7 @@
                                     <div class="col-md-3">
                                        <div class="test_box text_align_center">
                                           <span><img src="images/test2.png" alt="#"/></span>
-                                          <h4>Rajesh M</h4>
+                                          <h4>James</h4>
                                           <img class="img_responsive" src="images/te.png" alt="#"/>
                                           <p>humour, or randomised words which don't look even slightly believable. If you are</p>
                                        </div>
@@ -452,5 +467,16 @@
       <script>
          AOS.init();
       </script>
+      <script>
+         function redirectToAnotherPage(element) {
+             // Add the 'clicked' class to initiate the bounce effect
+             element.classList.add('clicked');
+     
+             // Redirect to another page after a short delay (adjust as needed)
+             setTimeout(function() {
+                 window.location.href = './cyber_security.html';
+             }, 300);
+         }
+     </script>
    </body>
 </html>
