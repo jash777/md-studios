@@ -29,37 +29,6 @@
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
-* {
-     box-sizing: border-box !important;
-}
-
-.container {
-     max-width: 1170px;
-}
-
-html {
-     scroll-behavior: smooth;
-}
-
-body {
-     color: #666666;
-     font-size: 14px;
-     font-family: 'Poppins', sans-serif;
-     line-height: 1.80857;
-     font-weight: normal;
-}
-
-a {
-     color: #1f1f1f;
-     text-decoration: none !important;
-     outline: none !important;
-     -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-     -ms-transition: all .3s ease-in-out;
-     -o-transition: all .3s ease-in-out;
-     transition: all .3s ease-in-out;
-}
-
 h1,
 h2,
 h3,
@@ -203,7 +172,13 @@ button {
      margin: 0;
      padding: 0;
      cursor: pointer;
+     transition: background-color 0.3s ease;
+
 }
+.button:hover {
+     background-color: #ddd;
+   }
+
 
 .full {
      float: left;
@@ -223,7 +198,7 @@ button {
 
 .titlepage h2 {
      font-size: 45px;
-     color: #2b2b2b;
+     color: #A3B4D6;
      line-height: 60px;
      font-weight: bold;
      padding: 0;
@@ -235,35 +210,15 @@ button {
      align-items: center;
      flex-wrap: wrap;
 }
-
-
-.read_more {
-     display: inline-block;
-     font-size: 17px;
-     transition: ease-in all 0.5s;
-     font-weight: regular;
-     color: #000000;
-     z-index: 999;
-     position: relative;
-     margin-bottom: -100px;
-     margin-left: -7.8%;
- }
-
-
- .read_more::first-word {
-     text-transform: uppercase;
- }
- 
  .link_btn {
      display: flex;
      align-items: center;
-
+     color: black;
+     margin-left: -15%;
+     margin-bottom: -60px;
+     text-transform: lowercase;
  }
  
-.link_btn a {
-     margin-left: -7%;
-     display: flex;
-} 
  .read_more:before {
      content: "";
      width: 0px;
@@ -284,7 +239,7 @@ button {
      transition: ease-in all 0.5s;
  }
  
-
+ 
 .read_more::before::after {
      width: 100%;
      transition: ease-in all 0.5s;
@@ -305,7 +260,6 @@ button {
 .img_responsive {
      max-width: 100%;
 }
-
 
 /**-- heading section --**/
 
@@ -328,9 +282,12 @@ z-index: 999;
 .navigation.navbar {
      float: right;
      padding: 0;
-     margin-right: -330px; /* Adjust the value as needed */
-     border: 0.5px solid #a3b4d6ab; /* Set border color to black */
+     margin-right: -28%; /* Adjust the value as needed */
      border-radius: 28px;
+     justify-content: space-between;
+     padding: 10px 20px;
+
+
 
 }
 @media only screen and (max-width: 767px) {
@@ -338,7 +295,6 @@ z-index: 999;
          margin-right: -9px; 
          border: transparent; /* Set border color to black */
          border-radius: 28px;  
-
      }
 
  }
@@ -355,18 +311,17 @@ z-index: 999;
      
 }
 
+
+
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
      color: #fff;
      background: #A3B4D6;
-     
-
-
+     transform: scale(1);
+ 
 }
 
-.navigation.navbar-dark .navbar-nav .active>.nav-link,
-.navigation.navbar-dark .navbar-nav .nav-link.active,
-.navigation.navbar-dark .navbar-nav .nav-link.show,
+
 .navigation.navbar-dark .navbar-nav .show>.nav-link {
      color: #fff;
      background: #A3B4D6;
@@ -409,12 +364,23 @@ ul.email li i {
 
 /** banner section **/
 
+body {
+     transition: all 0.3s ease-in-out; /* Apply transitions to all body properties */
+     font-family: 'Times New Roman', Times, serif;
+   }
+   
+   /* Apply transitions to specific elements if needed: */
+   .element-to-transition {
+     transition: opacity 0.5s ease-out, transform 0.3s ease-in-out;
+   }
+
+   
 .full_bg {
      background: #fff; 
    }
    
    .slider_main {
-     padding-top: 6%;
+     padding-top: 4%;
    }
    
    .relative {
@@ -434,26 +400,28 @@ ul.email li i {
    }
    
    .carousel-item {
-     min-height: 350px;
+     min-height: 35%;
      height: 100%;
      width: 100%;
    }
    
    .board {
-     max-width: 454px;
+     max-width: 66%;
      float: right;
      text-align: left;
      width: 100%;
    }
    
    .relative h3 {
-     padding-top: 60px;
-     font-size: 6em;
-     line-height: 85px;
+     padding-top: 10%;
+     font-size: 7.7em;
+     line-height: 110%;
      color: #2b2b2b;
      font-weight: bold;
-     padding-bottom: 60px;
-     margin-left: -9%;
+     padding-bottom: 15%;
+     margin-left: -17.5%;
+     z-index: 1; 
+
    }
    
    .carousel .icon-container {
@@ -499,19 +467,77 @@ ul.email li i {
    }
    
    .banner_img {
-     padding-right: 50px; 
+     padding-right: 11%; 
+     max-width: 100%;
+     height: auto;
+
+
+
    }
    
    .banner_img figure {
      margin: 0;
    }
-
-
+   .banner_img img {
+     transition: transform 0.3s ease; 
+   }
+   
+   .banner_img:hover img {
+     transform: scale(1.1);
+   }
+   .banner_img img {
+     object-fit: cover;
+     object-position: top;
+   }
+   .banner {
+     background-size: cover;
+   }
+   .banner {
+     background-position: center center; 
+   }
+   .banner:after {
+     content: '';
+     background: rgba(0,0,0,0.5);
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+   }
+   .banner {
+     height: 400px;
+   }
    /* Responsive Styles */
+
+
 /** end banner section **/
+.dropdown-item:hover {
+     background-color: transparent; /* Change this to your desired hover color */
+     color: #A3B4D6; /* Change this to your desired text color on hover */
+     border-radius: 30px; /* Adjust the value for the desired border-radius */
+     transition: ease-in-out;
 
+ }
 
+ /* Optional: Add a subtle transition effect */
+ .dropdown-item {
+     transition: background-color 0.01s ease, color 0.01s ease; /* Smooth transitions */
+     cursor: pointer;
+
+ }
+ .dropdown-menu {
+     border-radius: 18px; /* Adjust the value for the desired border-radius */
+     transition: opacity 0.3s ease; /* Smooth transition for opacity */
+ }
+ .show .dropdown-menu {
+     opacity: 1;
+ }
 /** our class **/
+.class_box.clicked {
+     transform: scale(1.1); /* Scale the card to 110% on click */
+     box-shadow: none; /* Remove the shadow on click */
+
+ }
 
 .class {
      padding: 140px 0px 60px 0px;
@@ -522,13 +548,21 @@ ul.email li i {
      padding-top: 15px;
      color: #2b2b2b;
 }
-
+.class_box:hover {
+     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Add a subtle shadow on hover */
+     transform: scale(1.1);
+ }
+ 
 .class_box {
      border-radius: 10px;
      background: #A3B4D6;
      margin-bottom: 58px;
-     transition: ease-in all 0.5s;
+     transition: transform 0.3s ease; /* Add a smooth transition effect for the bounce */
      padding: 40px 50px 75px 50px;
+     cursor: pointer;
+     overflow: hidden; /* Hide overflow to prevent unwanted content visibility during animation */
+
+     
 }
 
 .class_box h3 {
@@ -538,13 +572,16 @@ ul.email li i {
      font-weight: bold;
      line-height: 22px;
      padding: 30px 0;
+     
 }
+
 
 .class_box p {
      color: #ffffff;
      font-size: 16px;
      line-height: 28px;
      transition: ease-in all 0.5s;
+     
 }
 
 .blue {
@@ -578,7 +615,7 @@ ul.email li i {
      font-size: 7vw; /* Use viewport width for responsive font size */
      margin-bottom: 20px;
      color: whitesmoke;
-     font-family: 'Poppins', sans-serif;
+     font-family: 'Times New Roman', Times, serif;
  }
  
  .about .text-container {
@@ -596,10 +633,25 @@ ul.email li i {
      
  }
  
+ .logo {
+
+     display: flex;
+     align-items: center; /
+
+ }
+ .logo img {
+          height: auto; /* Maintain the aspect ratio of the logo */
+          border: 1px  #e7e7e7; /* Optional: Add a border for styling */
+          border-radius: 100px; /
+          filter: brightness(1.5); /* Increase brightness (1.0 is normal brightness) */
+          filter: contrast(1);
+          width: 250%;
+ }
  /* Media query for mobile devices and tablets */
  @media only screen and (max-width: 767px) {
      .about {
          padding: 10%; /* Adjust padding for smaller screens */
+         
      }
  
      .about .text-container {
@@ -608,8 +660,8 @@ ul.email li i {
      }
  
      .about h1 {
-         font-size: 11.5vw;
-         left: -0.65rem; /* Adjust font size for smaller screens */
+         font-size: 13.6vw;
+         left: -5%; /* Adjust font size for smaller screens */
      }
      .about .text-container  p {
           font-size: 5vw; /* Adjust font size for smaller screens */
@@ -622,48 +674,15 @@ ul.email li i {
 /** end about section **/
 
 
-/** skating **/
-
-/* .skating {
-     background: #fff;
-     padding: 90px 30px 90px 30px;
-}
-
-.skating .titlepage p {
-     padding-top: 15px !important;
-     line-height: 30px;
-     font-size: 17px;
-     color: #ffffff;
-}
-
-.skating-box figure {
-     margin: 0;
-}
-
-.skating-box figure img {
-     max-width: 100%;
-     margin-bottom: 35px;
-}
-
-.skating .read_more::before {
-     left: 89px;
-} */
-
-
-/** end skating **/
-
-
-/** shop section **/
-
-/** end shop section **/
 
 
 /** testimonial **/
 
 .testimonial {
      background: #ffffff;
-     padding: 90px 0;
-     margin-top: 50px;
+     padding: 5% 0;
+     margin-top: 5%;
+     
 }
 
 .testimonial .titlepage h2 {
@@ -672,7 +691,9 @@ ul.email li i {
 
 .carousel-indicators {
      display: none;
+     
 }
+
 
 #myCarousel a.carousel-control-prev {
      background: #A3B4D6;
@@ -724,7 +745,7 @@ ul.email li i {
 }
 
 .testimonial .carousel-item {
-     padding-top: 53px;
+     padding-top: 6%;
 }
 
 .test_box {
@@ -733,6 +754,10 @@ ul.email li i {
      padding: 0 20px 40px 20px;
 }
 
+.item {
+     flex: 1; 
+   }
+   
 .test_box span {
      width: 100px;
      box-shadow: 0 0 38px rgba(14, 14, 13, 0.10);
@@ -757,7 +782,7 @@ ul.email li i {
      font-size: 24px;
      line-height: 25px;
      font-weight: bold;
-     margin-top: 38px;
+     margin-top: 10%;
 }
 
 .test_box img {
@@ -981,6 +1006,52 @@ ul.social_icon li a:hover {
      background: #A3B4D6
 }
 
+
+.link_btn .read_moreq  {
+     color: rgb(0, 0, 0);
+     margin-top: -20%;
+}
+
+.link_btn a .first-letter {
+     font-size: 24px; /* Adjust font size for mobile */
+     color: #1d1c1cd5;
+     
+ }
+
+@media only screen and (max-width: 767px) {
+
+
+  
+     .link_btn .read_moreq  {
+          color: rgb(0, 0, 0);
+          margin-top: -27%;
+          margin-left: 4%;
+          font-size: 15px;
+
+     }
+      .link_btn a {
+          font-size: 10px;
+          margin-top: -1.4%;
+      }
+
+  
+      .link_btn a .first-letter {
+          font-size: 24px; /* Adjust font size for mobile */
+          color: #111111d5;
+          
+      }
+
+      .link_btn {
+          color: rgb(0, 0, 0);
+          margin-left: -1%;
+          text-transform: lowercase;
+     
+     
+     
+      }
+
+}
+
 .copyright p {
      color: #fff;
      font-size: 17 px;
@@ -1003,6 +1074,21 @@ ul.social_icon li a:hover {
 /** end footer **/
 
 
+/** NAV **/
+
+
+@media (min-width: 768px) {
+     .navigation {
+       flex-direction: row;
+     }
+   }
+
+   
+/* Mobile */
+.navigation {
+     flex-direction: column;
+   }
+
 /**  inner page css **/
 
 .inner_page .header {
@@ -1019,6 +1105,21 @@ ul.social_icon li a:hover {
      padding-bottom: 0;
 }
 
+.separate-container {
+     max-width: 90%;
+     margin: 70px auto;
+     background-color:transparent;
+     border-radius: 5px;
+     text-align: justify;
+     
+     
+ }
+
+ .watermark-page {
+     background: url('../images/about\ _bg2.jpg') no-repeat; /* Replace 'watermark.jpg' with your watermark image URL */
+ }
+
+ /* Image inside the circle */
 
 /** contact **/
 
